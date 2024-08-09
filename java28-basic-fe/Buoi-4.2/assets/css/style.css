@@ -1,0 +1,69 @@
+/* Reset brower */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phan tu cha */
+
+.container{
+    display: flex;
+    width: 800px;
+    height: 1000px;
+    background-color: pink;
+
+    /* can phan tu giua trang */
+    margin: auto;
+
+    /* Xay dung huong phan tu con */
+    /* flex-direction: column-reverse; */
+
+
+    /* Giup phan tu con tu dong xuong hang khi kich thuoc vuot qua man hinh */
+    flex-wrap: wrap;
+
+    /* Justify-content: can chinh theo hang */
+    /* justify-content: space-between; */
+
+    /* Aline-item: can chinh phan tu theo cot */
+    /* align-items: center; */
+
+    /* align-content: can chinh cac hang item */
+    /* align-content: stretch; */
+}
+
+
+/* Phan tu con */
+.item-1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    font-size: 20px ;
+    color: white;
+    /* order: 2; */
+    flex-grow: 1;
+}
+
+.item-2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    /* order :3; */
+    flex-grow: 1;
+}
+
+.item-3{
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+    color: white;
+    font-size: 20px;
+    /* order: 1; */
+}
+
+
+
+

@@ -1,0 +1,83 @@
+/* Reset browser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    transition: width 0.5s;
+}
+
+.box-1:hover {  
+    /* hover: cu phap trong css khi di chuot vao 1 pt */
+    width: 400px;
+}
+
+
+/* thay doi gia tri nhieu thuoc tinh */
+.box-2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    transition: width .3s, height .3s;
+
+}
+
+.box-2:hover {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* Toc dp chuyen doi */
+.wrap-box div {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* linear */
+.box-3{
+    background-color: violet;
+
+    transition: width .3s;
+    transition-timing-function: linear;
+}
+
+.box-3:hover {
+    width: 500px;
+}
+
+
+/* ease */
+.box-4{
+    background-color: yellow;
+    transition: width .3s;
+    transition-timing-function: ease;
+
+}
+
+.box-4:hover {
+    width: 500px;
+}
+
+/* Do tre hieu ung transition */
+.box-6{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
+
+    transition: width .4s;
+    transition-delay: 3s;
+}
+.box-6:hover {
+    width: 800px;
+
+}

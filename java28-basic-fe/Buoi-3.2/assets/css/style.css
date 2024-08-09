@@ -1,0 +1,41 @@
+/* Reset browser */
+*{
+    margin: 0px; /* khoang cach phan tu */
+    padding: 0px;/* khoang cach phan tu */
+    box-sizing: border-box;/* kich thuoc tren cac browser nhu nhau */
+}
+
+/* Bo chon them ID */
+#title_2_1{
+    color: red;
+}
+#title_2_2{
+    color: aqua;
+}
+
+/* Bo chon theo class */
+.title_3_1{
+    color:violet;
+}
+
+.title_3_2{
+    color: orange;
+}
+
+div h4{
+    color: green;
+}
+
+h4{
+    color: pink;
+}
+
+/* Bo chon theo tag link */
+
+a:link{
+    color: black;
+
+}
+a:visited{
+    columns: aqua;
+}

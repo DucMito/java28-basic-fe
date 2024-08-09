@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Global css */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;/* tu dong xuong hang*/
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.column {
+    width: calc(100% / 4);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Header-top */
+.header-top {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;/* Mat troi */
+}
+
+.header-top p{
+    color: white;
+    font-size: 16px;
+}
+
+.header-top .close {
+    width: 25px;
+    height: 25px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+
+    /* Trai dat */
+    position : absolute;
+    right: 10px;
+}
+
+
+/* Header main */
+.header-main {
+    width: 100%;
+    height: 65px;
+
+}
+
+.wrap-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    /* width: 20%; */
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.menu-main{
+    /* width: 50%; */
+    height: 65px;
+    /* background-color: aqua; */
+}
+
+.menu-main ul{
+    display: flex;
+    height: 65px;
+    align-items: center;
+
+}
+
+.menu-main ul li {
+    list-style: none;/* bo dau cham*/
+    position: relative;
+}
+
+.menu-main ul li a{
+    text-decoration: none;/* bo gach chan the a*/
+    color: black;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+
+.menu-main ul li .menu-c1{
+    /* display: block; */
+    height: auto;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    border: 1px soli #ddd;
+    border-radius: 5px;
+    width: 200px;
+    left: 0;
+    background-color: wheat;
+    display: none;
+}
+
+.menu-main ul li .menu-c1 li a{
+    padding: 10px 15px;
+    width: 100%;
+    margin-right: 0;
+    display: block;
+}
+
+.menu-main ul li .menu-c1 li {
+    position: relative;
+}
+
+.menu-main ul li .menu-c1 li a:hover{
+    background-color: gray;
+}
+
+.menu-main ul li:hover .menu-c1{
+    display: block;
+}
+
+/* Menu c2 */
+
+.menu-main ul li .menu-c1 li .menu-c2{
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 100%;
+    /* display: block; */
+    display: none;
+    width: 200px;
+    height: auto;
+}
+
+.menu-main ul li .menu-c1 li:hover .menu-c2 {
+    display: block;
+}
+
+.button-menu {
+    /* width: 15%; */
+    height: 65px;
+    /* background-color: orange; */
+
+    display: flex;
+    align-items: center;
+}
+
+.button-menu button{
+    border:none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.button-menu button:hover{
+    background-color: #f8f8f8;
+    cursor: pointer; /* chuyen mui ten bang ban tay */
+}
+
+.button-menu .active:hover {
+    cursor: not-allowed;
+    background-color: white;
+}
+
+.button-user {
+    /* width: 15%;
+    background-color: pink; */
+
+    height: 65px;
+}
+
+.button-user ul {
+    display: flex;  
+    margin: auto;
+    align-items: center;
+    height: 65px;
+}
+.button-user ul li{
+    list-style: none;
+    position: relative;
+    margin-left: 12px;
+}
+
+.button-user ul li i {
+    font-size: 22px;
+}
+.button-user ul li span {
+    width: 20px;
+    height: 20px;
+    background-color: #2C51B0;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    position: absolute; 
+    top: -15px;
+    right: -15px;
+    
+}
+
+/* listing product */
+.listing-product{
+    width: 100%;
+    padding: 40px 0;
+    /* background-color: pink; */
+    
+
+}
+
+.content {
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+
+
+
+/* Desktop */
+@media screen and (max-width: 1450px){
+    
+}
+
+/* Table */
+@media screen and (max-width: 780px){
+   .container{
+    width: 100%;
+   }
+    .menu-main {
+    display: none;
+   }
+
+   .button-menu{
+    display: none;
+   }
+}
+
+/* Moblie */
+@media screen and (max-width: 420px){
+    
+}
+
